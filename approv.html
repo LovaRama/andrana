@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock</title>	<meta charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="fonticons/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/style.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</link>
+<script src="https://kit.fontawesome.com/samplekit.js"
+ crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-2 droit">
+			<h1>
+				<img src="img/smilega.png" class="img-responsive">
+			</h1>
+				<ul class="list-group">
+					<li class="list-group-item principal"><a href="journal.html" class="fa fa-calculator"> Gestion des articles</a>
+						<ul class="list-group">
+							<li class="list-group-item active"><a href="approv.html" class="sub fas fa-cart-arrow-down">Approvisionnement</a></li>
+							<li class="list-group-item"><a href="stock.html" class="sub fa fa-warehouse"> Stock</a></li>
+							<li class="list-group-item"><a href="historique.html" class="sub fas fa-cash-register"> Caisse</a></li>
+							<li class="list-group-item"><a href="Journal.html" class="sub fa fa-exchange-alt"> Charge</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item principal"><a href="rdv.html" class="fas fa-users"> Gestion des tiers</a>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="Client_Frns.html" class="sub fas fa-hand-holding-usd"> Client/Fournisseur</a></li>
+							<li class="list-group-item"><a href="banque.html" class="sub fas fa-landmark"> Banque</a></li>
+							<li class="list-group-item"><a href="Membres.html" class="sub fas fa-address-card"> Membres</a></li>
+						</ul>
+					</li>
+					</li>
+				</ul>
+		</div>
+		<!-- Header begin -->
+		<div class="col-md-10">
+			<div class="entete">
+			<i class="fa fa-car"></i>
+				<div class="cards">	
+						<i class="fa fa-id-card">  Lova Ramanantsoa</i><br>
+						<a href="login.html" id="disconect"><i class="fas fa-sign-out-alt">  Déconnexion</i></a>
+				</div>
+			<hr>
+			</div>
+			<!-- Header End -->
+			<!-- Main container Begin -->
+			<div class="container-fluid">
+				<!-- Vente Begin -->
+				<div class="row">
+					<div class="col-md-3 right1">	
+						<div>
+							<center><h2 class="vente">APPROV</h2></center>
+						</div>
+						<div class="form-group">
+								<label for="services">Réf</label>
+								<input class="form-control" placeholder="Référence" type="text" name="id" disabled>
+						</div>					
+						<div class="form-group">
+								<label for="prdname">Nom du produit</label>
+								<input class="form-control" placeholder="Product Name" type="text" name="prdname">
+						</div>
+						<div class="form-group">
+								<label for="qty">Qty</label>
+								<input class="form-control" placeholder="Quantité" type="text" name="qy">
+						</div>	
+						<div class="form-group">
+								<label for="price">PU</label>
+								<input class="form-control" placeholder="Prix unitaire" type="number" name="price">
+						</div>	
+						<div class="form-group">
+								<label for="tprice">Total</label>
+								<input class="form-control" type="number" name="tprice">
+						</div>	
+						<div class="form-group">
+								<label for="services">Date</label>
+								<input class="form-control"  type="date" name="date">
+						</div>
+							<center>
+								<button type="submit" class="btn btn-success">Enregistrer</button>
+							</center>
+							<br>
+						</div>	
+					<!-- Vente End -->
+					<!-- Charge Begin -->
+					<div class="col-md-9 right">	
+				<table class="table table-hover">
+					<thead class="thead-dark">
+					<tr>
+						<th>Réf</th>
+						<th>Nom du produit</th>
+						<th>Qty</th>
+						<th>PU</th>
+						<th>Total</th>
+						<th>Date</th>
+					</tr>
+					</thead>
+					<tr>
+						<td>APPR1001</td>
+						<td>Disque embrayage</td>
+						<td>2</td>
+						<td>75 000 Ar</td>
+						<td>150 000 Ar</td>
+						<td>24-10-2020</td>
+					</tr>
+										
+					<tr>
+						<td>APPR1002</td>
+						<td>Volant moteur</td>
+						<td>1</td>
+						<td>500 000</td>
+						<td>500 000 Ar</td>
+						<td>23-10-2020</td>
+					</tr>
+										
+					<tr>
+						<td>APPR1003</td>
+						<td>Plaquette frein</td>
+						<td>10</td>
+						<td>50 000 Ar</td>
+						<td>500 000 Ar</td>
+						<td>22-10-2020</td>
+					</tr>
+					<tr>
+						<td>APPR1004</td>
+						<td>Calculateur</td>
+						<td>5</td>
+						<td>100 000 Ar</td>
+						<td>500 000 Ar</td>
+						<td>18-10-2020</td>
+					</tr>
+					<tr>
+						<td>APPR1005</td>
+						<td>Calculateur</td>
+						<td>2</td>
+						<td>100 000 Ar</td>
+						<td>200 000 Ar</td>
+						<td>17-10-2020</td>
+					</tr>
+					<tr>
+						<td>APPR1006</td>
+						<td>Pneu</td>
+						<td>4</td>
+						<td>100 000 Ar</td>
+						<td>400 000 Ar</td>
+						<td>16-10-2020</td>
+					</tr>
+					<tr>
+						<td>APPR1007</td>
+						<td>Volant moteur</td>
+						<td>1</td>
+						<td>500 000 Ar</td>
+						<td>500 000 Ar</td>
+						<td>15-10-2020</td>
+					</tr>
+					<tr>
+						<td>APPR1008</td>
+						<td>Disque embrayage</td>
+						<td>1</td>
+						<td>350 000</td>
+						<td>350 000 Ar</td>
+						<td>14-10-2020</td>
+					</tr>
+					<tr>
+						<td>APPR1009</td>
+						<td>Volant moteur</td>
+						<td>1</td>
+						<td>500 000 Ar</td>
+						<td>500 000 Ar</td>
+						<td>13-10-2020</td>
+					</tr>
+										<tr>
+						<td>APPR1010</td>
+						<td>Plaquette frein</td>
+						<td>4</td>
+						<td>250 000</td>
+						<td>1 000 000 Ar</td>
+						<td>12-10-2020</td>
+					</tr>
+				</div>
+					<!-- Charge End -->
+			</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>			
+		</div>
+
+	</div>
+</body>
+</html>
